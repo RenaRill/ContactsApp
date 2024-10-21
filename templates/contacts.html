@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список контактов</title>
+</head>
+<body>
+    <h1>Список контактов</h1>
+    <ul>
+        {% for contact in contacts %}
+            <li>{{ contact.name }} - {{ contact.phone }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Вернуться на главную</a>
+</body>
+</html>
